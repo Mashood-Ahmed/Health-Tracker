@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+
+    <%- include("./partials/nav.ejs"); %>
+    
+    <div class="container">
+        <h1 class="sec-heading">Check Vitals</h1>
+        <section class="banner" id="vitals">
+            <div class="banner-img">
+                <img src="../assets/imgs/mainBanner.png" alt="mainBanner">
+            </div>
+            <div class="banner-info">
+                <h2>Keep track of your health with consistency</h2>
+                <p>Your personal health care record into your own hands so you know when to make the right decisions about your health</p>
+                <br>
+                <a href="/test">Check vitals</a>
+            </div>
+        </section>
+
+        <h1 class="sec-heading">Monthly Analytics</h1>
+        <section class="banner" id="analytics">
+            <div class="banner-img">
+                <img src="../assets/imgs/banner2.png" alt="mainBanner">
+            </div>
+            <div class="banner-info">
+                <h2>Determine where you health lies statistically</h2>
+                <p>Your personal health care record into your own hands so you know when to make the right decisions about your health</p>
+                <br>
+                <a href="/analytics">Check Analytics</a>
+            </div>
+        </section>
+
+        <!-- <h1 class="sec-heading">Maintain Records</h1>
+        <section class="banner" id="records">
+            <div class="banner-img">
+                <img src="../assets/imgs/banner3.jpg" alt="mainBanner">
+            </div>
+            <div class="banner-info">
+                <h2>Maintain records over a period of time</h2>
+                <p>Your personal health care record into your own hands so you know when to make the right decisions about your health</p>
+                <br>
+                <a href="/records">Check Records</a>
+            </div>
+        </section> -->
+
+        <h1 class="sec-heading">Suggestions</h1>
+        <section class="banner" id="recoms">
+            <div class="banner-img">
+                <img src="../assets/imgs/banner4.png" alt="mainBanner">
+            </div>
+            <div class="banner-info">
+                <h2>Recommendations for when you need proper care</h2>
+                <p>Your personal health care record into your own hands so you know when to make the right decisions about your health</p>
+                <br>
+                <a href="/recom">Check Recommendations</a>
+            </div>
+        </section>
+
+        <h1 class="sec-heading">Contact Us</h1>
+        <section class="banner" id="contact">
+            <div class="banner-img">
+                <img src="../assets/imgs/banner5.png" alt="mainBanner">
+            </div>
+            <div class="banner-info">
+                <h2>Contact Us for all your queries</h2>
+                <p>Your personal health care record into your own hands so you know when to make the right decisions about your health</p>
+                <br>
+                <a href="/contact">Contact Us</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

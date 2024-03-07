@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitals</title>
+    <link rel="stylesheet" href="./styles/vitalsStyles.css">
+</head>
+<body>
+
+    <%- include("./partials/nav.ejs"); %>
+
+    <h1>Test Your Vitals</h1>
+
+    <div class="form-container">
+        <form id="vform" action="vitals" method="post">
+            <div class="input-con">
+                <div class="label"><p>Oxygen Saturation</p></div>
+                <input type="number" id="o2s" name="o2s">
+            </div>
+            <div class="input-con">
+                <div class="label"><p>Heart Rate</p></div>
+                <input type="number" id="hrate" name="hrate">
+            </div>
+            <div class="input-con">
+                <div class="label"><p>Systolic Blood Pressure</p></div>
+                <input type="number" id="sbp" name="sbp">
+            </div>
+            <div class="input-con">
+                <div class="label"><p>Body Temperature</p></div>
+                <input type="number" id="btemp" name="btemp">
+            </div>
+            <div class="input-con">
+                <div class="label"><p>Respiration Rate</p></div>
+                <input type="number" id="rrate" name="rrate">
+            </div>
+            <div class="input-con">
+                <div class="label"><p>Weight (kilos)</p></div>
+                <input type="number" id="w8" name="w8">
+            </div>
+            <button type="button" onclick="setVitals()">Submit</button>
+        </form>
+    </div>
+    
+    <script src="./controllers/vitalsContoller.js"></script>
+
+</body>
+</html>

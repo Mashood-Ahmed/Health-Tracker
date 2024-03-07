@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./styles/forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body bgcolor="#FBF2CF">
+<div class="form-container">
+  <div class="form">
+    <h1> <span>Lo</span>gin</h1>
+    <form class="login-form" id="myForm" action="signin" method="POST">
+      <i class="fa fa-envelope-o icon"></i>
+      <input type="text" id="email" name="email" placeholder="Enter your email"/>
+      <p class='error' id="emailError"></p>
+      <i class="fa fa-lock icon"></i>
+      <input class="pass" type="password" id="password" name="password" placeholder="Confirm a password"/>
+      <p class='error' id="pwdError"></p>
+      <button type="button" onclick="validLogin()">Login Now</button>
+      <p class="message">Dont have an account? <a href="/signup">Sign up Now</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="./controllers/controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Regiseration Form</title>
+  <link rel="stylesheet" href="./styles/forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body bgcolor="#FBF2CF">
+<div class="form-container">
+  <div class="form">
+    <h1> Sign Up </h1>
+    <form class="login-form" id="myForm" method="POST" action="/signup">
+      <i class="fa fa-user-o icon"></i>
+      <input type="text" id="username" name="name" placeholder="Enter your name"/>
+      <p class="error" id="unameError"></p>
+      <i class="fa fa-calendar-o icon"></i>
+      <input type="date" id="dob" name="dob" placeholder="Birth Date"/>
+      <p class="error" id="dobError"></p>
+      <i class="fa fa-envelope-o icon"></i>
+      <input type="text" id="email" name="email" placeholder="Enter your email"/>
+      <p class="error" id="emailError"></p>
+      <i class="fa fa-lock icon"></i>
+      <input class="pass" type="password" name="password" id="password" placeholder="Create a password"/>
+      <p class="error" id="pwdError"></p>
+      <i class="fa fa-lock icon"></i>
+      <input class="pass" type="password" id="cpassword" placeholder="Confirm a password"/>
+      <p class="error" id="cpwdError"></p>
+      <button type="button" onclick="isValid()">Register Now</button>
+      <p class="message">Already have an account? <a href="/signin">Login Now</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="./controllers/controller.js"></script>
+</body>
+</html>

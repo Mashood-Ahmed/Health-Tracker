@@ -1,0 +1,119 @@
+section{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.sec-heading{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.banner .banner-img{
+    width: 40%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner-info{
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 0 5rem 2rem 10rem;
+    word-wrap: break-word;
+}
+
+.banner-info h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.banner-info p{
+    color: black;
+}
+
+.banner-info a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#vitals{
+    background-color: #1abc9c;
+    color: #1abc9c;
+}
+
+#vitals .banner-info a{
+    background-color: #1abc9c;
+}
+#vitals .banner-info a:hover{
+    background-color: #107762;
+}
+
+#analytics{
+    background-color: #e74c3c;
+    color: #e74c3c;
+}
+
+#analytics a{
+    background-color: #e74c3c;
+}
+#analytics a:hover{
+    background-color: #882e24;
+}
+
+#records{
+    background-color: #3498db;
+    color: #3498db;
+}
+
+#records a{
+    background-color: #3498db;
+}
+#records a:hover{
+    background-color: #1b4f72;
+}
+
+#recoms{
+    background-color: #9b59b6;
+    color: #9b59b6;
+}
+
+#recoms a{
+    background-color: #9b59b6;
+}
+#recoms a:hover{
+    background-color: #553163;
+}
+
+#contact{
+    background-color: #e67e22;
+    color: #e67e22;
+}
+
+#contact a{
+    background-color: #e67e22;
+}
+#contact a:hover{
+    background-color: #613510;
+}

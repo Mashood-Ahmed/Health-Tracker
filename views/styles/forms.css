@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+  overflow: hidden;
+}
+
+.watermark{
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  bottom: 0;
+  right: 0;
+  text-align: end;
+  margin-right: 5px;
+  line-height: 0;
+  opacity: 50%;
+  z-index: 100;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  margin-top: 2rem;
+}
+
+.form {
+  background: #202933;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 45px;
+  padding-top: 1rem;
+  text-align: center;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form h1{
+  float: left;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3rem;
+  color: #1abc9c;
+}
+
+.form .icon{
+  position: absolute;
+  font-size: 30px;
+  color: #1abc9c;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: solid #A1C298 1px;
+  color: #fff;
+  padding: .5rem;
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form .error{
+  margin: 0.2rem 0 0.7rem 2.5rem;
+  text-align: start;
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #1abc9c;
+  width: 100%;
+  margin: 2rem 0 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #0e6453;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.form .message{
+  color: #fff;
+  font-size: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message a{
+  text-decoration: none;
+  color: #1abc9c;
+  transition: all .2s ease-in-out;
+}
+
+.message a:hover{
+  font-size: 1.1rem;
+}
+
+/* .container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+} */

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.err{
+    margin-left: 44%;
+    margin-top: 7%;
+}
+
+p{
+    margin-left: 10px;
+    color: white;
+}
+
+.err a{
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #9b59b6;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.err a:hover{
+    background-color: #533161;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="./styles/analyticsStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <%- include("./partials/nav.ejs"); %>
+
+    <h1>Analytics</h1>
+    <% try{ Object.values(Object.values(vitals)) %>
+        <button id="check" onclick="getAnalytics()"> Check Analytics</button>
+        <div class="main-container" id="at-container">
+            <div class="cards">
+              <div class="card card-1">
+                <div class="card__icon"><i>O<sub>2</sub></i></div>
+                
+                <h2 class="card__title">Oxygen Saturation</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="os" id="os"></p>
+                </p>
+              </div>
+              <div class="card card-2">
+                <div class="card__icon"><i class="fa fa-heartbeat"></i></div>
+                <h2 class="card__title">Heart Rate</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="hr"></p>
+                </p>
+              </div>
+              <div class="card card-3">
+                <div class="card__icon"><i class="fa fa-arrow-circle-up"></i></div>
+                
+                <h2 class="card__title">SBP</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="sbp"></p>
+                </p>
+              </div>
+              <div class="card card-4">
+                <div class="card__icon"><i class="fa fa-thermometer-full "></i></div>
+                
+                <h2 class="card__title">Temparture</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="bt"></p>
+                </p>
+              </div>
+              <div class="card card-5">
+                <div class="card__icon"><i class="fa fa-line-chart"></i></div>
+                
+                <h2 class="card__title">Respiration Rate</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="rr"></p>
+                </p>
+              </div>
+              <div class="card card-1">
+                <div class="card__icon"><i class="fa fa-balance-scale"></i></div>
+                
+                <h2 class="card__title">Weight</h2>
+                <p class="card__apply">
+                  <p class="card-val" id="w8"></p>
+                </p>
+              </div>
+            </div>
+          </div>
+    <% }catch(error){ %>
+        <div class="err">
+            <p> Test Pending...</p>
+            <a href="/test"> Check Vitals </a>
+        </div>
+    <% } %>
+
+    <script src="./controllers/analysis.js"></script>
+</body>
+</html>
